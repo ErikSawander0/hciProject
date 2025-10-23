@@ -1,0 +1,69 @@
+\documentclass[12pt,a4paper]{article}
+
+% Paket för svenska
+\usepackage[utf8]{inputenc}
+\usepackage[swedish]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{float}
+% övriga paket
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{cite}
+\usepackage{setspace}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+
+% Sidlayout
+\geometry{margin=2.5cm}
+\onehalfspacing
+
+% Sidhuvud och sidfot
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{\thepage}
+\lhead{\leftmark}
+\renewcommand{\headrulewidth}{0.4pt}
+
+\begin{document}
+
+% Framsida
+\input{sections/0_framsida}
+\newpage
+
+% Sammanfattning
+\input{sections/0_sammanfattning}
+\newpage
+
+% Innehållsförteckning
+\tableofcontents
+\newpage
+
+% Kapitel
+\input{sections/1_inledning}
+\newpage
+
+\input{sections/2_teori}
+\newpage
+
+\input{sections/3_metod}
+\newpage
+
+\input{sections/4_design}
+\newpage
+
+\input{sections/5_resultat}
+\newpage
+
+\input{sections/6_diskussion}
+\newpage
+
+% Referenser (IEEE-stil)
+\bibliographystyle{IEEEtran}
+\bibliography{references}
+\newpage
+
+% Bilagor
+\appendix
+\input{sections/7_bilagor}
+
+\end{document}

@@ -1,0 +1,157 @@
+\section{Resultat}
+\label{sec:resultat_test}
+
+\textit{[Resultatkapitlet presenterar det konkreta resultatet från era intervjuer, användbarhetstester och andra utvärderingar. Presentera data OBJEKTIVT - ta ingen ställning eller tolka här. Det gör ni i diskussionen.]}
+
+\textit{[Använd figurer, diagram och tabeller för att presentera data tydligt. Förklara diagram så läsaren förstår, men tolka inte ännu.]}
+
+
+\subsection{Resultat från intervjuer}
+
+\textit{[Presentera resultat från första intervjuomgången]}
+
+Totalt intervjuades [antal] personer från målgruppen. Demografisk data presenteras i tabell \ref{tab:demografi}.
+
+\begin{table}[h]
+\centering
+\begin{tabular}{|l|c|}
+\hline
+\textbf{Demografisk variabel} & \textbf{Antal/Medel} \\
+\hline
+Totalt antal deltagare & X \\
+Ålder (medel) & XX år \\
+Kön (M/K/Annan) & X/X/X \\
+Erfarenhet av [relevant område] & ... \\
+\hline
+\end{tabular}
+\caption{Demografisk data för intervjudeltagare}
+\label{tab:demografi}
+\end{table}
+
+
+\subsubsection{Identifierade teman}
+
+Genom tematisk analys identifierades följande huvudteman:
+
+\textbf{Tema 1: [Temats namn]}
+
+[Antal] av deltagarna nämnde problem relaterade till [beskriv]. En deltagare uttryckte: \textit{"[citat]"}. Liknande upplevelser rapporterades av...
+
+\textbf{Tema 2: [Temats namn]}
+
+[Fortsätt beskriva teman objektivt]
+
+
+\subsubsection{Identifierade behov}
+
+Baserat på intervjudata identifierades följande användarbehov:
+\begin{itemize}
+    \item Behov 1: [Beskriv]
+    \item Behov 2: [Beskriv]
+    \item ...
+\end{itemize}
+
+
+\subsection{Resultat från användbarhetstester - Iteration 2}
+
+Femton användare deltog i användbarhetstester av prototyp version 2. Varje deltagare fick genomföra 4 uppgifter, men enkäten hade inte frågar om fjärde uppgiften. 
+
+
+\subsubsection{Kvantitativa resultat}
+
+\textbf{Genomförandetid}
+
+Tabell \ref{tab:tid} visar tid för att genomföra varje uppgift.
+
+\begin{table}[h]
+\centering
+\begin{tabular}{|l|c|c|c|}
+\hline
+\textbf{Uppgift} & \textbf{Medeltid (s)} & \textbf{Min (s)} & \textbf{Max (s)} \\
+\hline
+Uppgift 1:  & 4 & 1 & 12 \\
+Uppgift 2:  & 24 & 4 & 60\\
+Uppgift 3:  & 23 & 1 & 60\\
+\hline
+\end{tabular}
+\caption{Tid för genomförande av uppgifter}
+\label{tab:tid}
+\end{table}
+
+\textbf{Framgångsgrad}
+
+Figur \ref{fig:success_rate} visar hur många deltagare som lyckades genomföra varje uppgift utan hjälp.
+
+\begin{figure}[h]
+    \centering
+    % \includegraphics[width=0.7\textwidth]{bilder/success_rate.png}
+    \caption{Framgångsgrad för varje uppgift (antal användare som klarade uppgiften utan hjälp)}
+    \label{fig:success_rate}
+\end{figure}
+
+\textbf{Identifierade problem}
+
+Totalt identifierades 20 unika användbarhetsproblem. Tabell \ref{tab:problem} sammanfattar de mest förekommande problemen.
+%MARK make sure task descriptions mentioned, how we didnt include four...
+\begin{table}[h]
+\centering
+\begin{tabular}{|p{6cm}|c|c|}
+\hline
+\textbf{Problem} & \textbf{Antal som drabbades} & \textbf{Allvarlighetsgrad} \\
+\hline
+Problem 1: Colors misleading or hard to look at & 6/15 & Medel\\
+Problem 2: Time scheduling difficult & 2/15 &  Låg \\
+Problem 3: Getting to edit profile unintuitive & 6/12 & Hög\\
+\hline
+\end{tabular}
+\caption{Identifierade användbarhetsproblem och deras allvarlighetsgrad}
+\label{tab:problem}
+\end{table}
+
+
+\subsubsection{Kvalitativa resultat}
+
+Under testerna observerades följande beteenden:
+
+\textbf{Navigation:} Flera användare (6/15) uttryckte förvirring när de skulle redigera en profil, det var många som råkade börja brygga kaffe när de försökte redigera.
+
+\textbf{Navigation:} 3 användare noterade att knapparna var förivrande, och att de skulle uppskattat mer symboler. 
+
+\textbf{Färger} 6 användare klagade att färgerna var inte konsekventa eller hade problem med kontrasten. 
+
+
+\subsubsection{Subjektiv tillfredsställelse}
+
+Efter testerna fick deltagarna svara på hur svåra de tyckte var uppgift var att genomföra. Medelvärdet var 68 av 70.
+
+% we didnt do this sus point thing... update method erik
+\begin{figure}[h]
+    \centering
+    % \includegraphics[width=0.6\textwidth]{bilder/sus_score.png}
+    \caption{SUS-poäng från deltagare}
+    \label{fig:sus}
+\end{figure}
+
+
+\subsection{Resultat från användbarhetstester - Iteration 3}
+
+\textit{[Om ni gjorde fler iterationer, presentera även dessa resultat. Visa förbättringar jämfört med tidigare iteration.]}
+
+Efter designändringar (beskrivna i avsnitt 4.3) genomfördes en ny omgång tester med [antal] deltagare.
+
+\textbf{Jämförelse med iteration 2:}
+
+\begin{itemize}
+    \item Medeltid för uppgift 1 minskade från XX s till YY s
+    \item Framgångsgrad för uppgift 2 ökade från XX\% till YY\%
+    \item Antal identifierade problem minskade från X till Y
+\end{itemize}
+
+Figur \ref{fig:comparison} visar jämförelse mellan iterationerna.
+
+\begin{figure}[h]
+    \centering
+    % \includegraphics[width=0.8\textwidth]{bilder/iteration_comparison.png}
+    \caption{Jämförelse av användbarhetsmetrik mellan iteration 2 och 3}
+    \label{fig:comparison}
+\end{figure}

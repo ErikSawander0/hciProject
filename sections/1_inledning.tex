@@ -1,0 +1,92 @@
+\section{Inledning}
+
+Kaffekonsumtion har blivit en central del av många människors vardag, och med den växande kaffekulturen har intresset för hemmabryggt premium-kaffe ökat markant. Moderna kaffemaskiner erbjuder idag avancerade funktioner som tidigare endast fanns i professionella espressomaskiner, men denna tekniska komplexitet medför ofta utmaningar i användbarhet och tillgänglighet.
+
+\subsection{Bakgrund}
+
+Premium-kaffemaskiner för hemmabruk har utvecklats från enkla bryggare till avancerade system med möjlighet att kontrollera variabler som malningsgrad, vattentemperatur, extraktionstid och vattenpulsintervaller. Denna utveckling har skapat en kluvenhet i användarupplevelsen: å ena sidan finns nybörjare som vill brygga gott kaffe enkelt, å andra sidan finns entusiaster som vill ha full kontroll över bryggprocessen.
+
+Nuvarande kaffemaskingränssnitt tenderar att antingen förenkla till den grad att avancerade funktioner blir otillgängliga, eller exponera alla inställningar samtidigt vilket skapar en överväldigande upplevelse för nya användare. Få maskiner lyckas balansera enkelhet för den oinvigde med djup funktionalitet för den erfarne användaren. Vanliga användbarhetsproblem inkluderar:
+
+\begin{itemize}
+    \item Komplexa menystrukturer med många nivåer av undermenyer
+    \item Bristande tydlighet i vad olika parametrar faktiskt påverkar
+    \item Svårigheter att spara och återanvända föredragna inställningar
+    \item Inkonsekvent terminologi och symbolik mellan olika tillverkare
+    \item Begränsad möjlighet till personalisering och anpassning
+\end{itemize}
+
+Genom att tillämpa principer från användarcentrerad design och interaktionsdesign finns potential att skapa gränssnitt som demokratiserar avancerad kaffebrygning genom att göra den tillgänglig för en bredare målgrupp utan att kompromissa med funktionalitet.
+
+
+\subsection{Syfte}
+
+Syftet med detta projekt är att förbättra användarupplevelsen för premium-kaffemaskiner genom att designa ett intuitivt gränssnitt som tillgodoser både nybörjare och erfarna användare. Projektet strävar efter att demokratisera avancerad kaffebrygning genom att sänka inlärningströskeln samtidigt som full funktionalitet bibehålls för entusiaster.
+
+Mer specifikt vill projektet undersöka hur ett profilbaserat system kan möjliggöra progressiv avslöjande av funktionalitet, där användare kan välja sin egen komplexitetsnivå beroende på erfarenhet och intresse.
+
+
+\subsection{Mål}
+
+Projektets mål är att leverera:
+
+\begin{itemize}
+    \item En högfidelitetsprototyp av ett användargränssnitt för en premium-kaffemaskin med touchskärm, riktat mot kaffeälskare som värderar både enkelhet och avancerad funktionalitet
+
+    \item Ett profilbaserat system där användare kan:
+    \begin{itemize}
+        \item Brygga kaffe med fördefinierade profiler (en-knapps-lösning)
+        \item Skapa och spara egna bryggprofiler med anpassade inställningar
+        \item Justera avancerade parametrar (malningsgrad, vattentemperatur, vattenpulsintervall, extraktionstid) för användare som önskar djupare kontroll
+    \end{itemize}
+
+    \item Grundläggande personaliseringsfunktioner såsom val av färgtema
+
+    \item En visuell implementation av gränssnittet (UI/UX) som demonstrerar interaktionsflöden och användbarhet, utan koppling till faktisk maskinvarufunktionalitet
+
+    \item Dokumentation och utvärdering av designprocessen genom användarcentrerade metoder
+\end{itemize}
+
+
+\subsection{Avgränsningar}
+
+Projektet avgränsas till följande:
+
+\begin{itemize}
+    \item \textbf{Plattform och implementation:} Projektet fokuserar på design av användargränssnittet (UI/UX) och visuell implementation. Inga faktiska maskinvarufunktioner eller backend-system implementeras. Knappar och kontroller kommer att vara visuellt och interaktivt funktionella men inte kopplade till bryggfunktionalitet.
+
+    \item \textbf{Maskintyp:} Projektet avgränsas till en specifik typ av premium-kaffemaskin med integrerad touchskärm. Mobilapplikationer, webbgränssnitt eller fjärrstyrning ingår inte i projektet.
+
+    \item \textbf{Språk:} Användargränssnittet designas och presenteras enbart på engelska för att förenkla utvecklingsprocessen och demonstration.
+
+    \item \textbf{Målgrupp:} Primär fokus ligger på kaffeälskare i hemsegmentet med varierande erfarenhetsnivåer.
+
+    \item \textbf{Funktionsomfång:} Projektet fokuserar på kärnfunktionalitet relaterad till kaffebrygning och profilhantering. Avancerade funktioner som underhållsscheman, fjärrdiagnostik eller integration med smarta hem-system ingår inte.
+\end{itemize}
+
+\textbf{Motivering:} Dessa avgränsningar möjliggör ett fokuserat arbete på interaktionsdesign och användbarhet utan att belastas av teknisk implementation. Genom att fokusera på en plattform (touchskärm) och ett språk (engelska) kan designprocessen bli mer iterativ och användarcentrerad inom projektets tidsram.
+
+\textbf{Potentiella konsekvenser:} Avsaknaden av faktisk backend-funktionalitet innebär att vissa användarupplevelser kring responstider och systemfeedback kommer att simuleras. Detta kan påverka hur realistiskt användbarhetstester speglar en faktisk produktmiljö, men är acceptabelt då projektets fokus ligger på interaktionsdesign snarare än teknisk implementation.
+
+
+\subsection{Arbetsfördelning}
+
+Projektet genomförs som ett samarbete där alla gruppmedlemmar bidrar till designprocessen. Följande arbetsfördelning har etablerats:
+
+\begin{table}[h]
+\centering
+\begin{tabular}{|l|p{9cm}|}
+\hline
+\textbf{Gruppmedlem} & \textbf{Ansvar och bidrag} \\
+\hline
+Elias Danielsson & Brainstorming design-idéer, prototyputveckling (initial fas), rapportskrivande (generell struktur, inledning), feedback insamling, merging av prototyper (Högnivå), förbättring av prototyp \\
+\hline
+Erik Sawander & Brainstorming design-idéer, prototyputveckling (initial fas), rapportskrivande(fill in later), feedback insamling, \\
+\hline
+Theodor Christensen & Prototyputveckling (initial fas), Skrivande av frågeformulär, rapportskrivande(fill in later), feedback insamling, \\
+\hline
+Victor Hillström & Prototyputveckling (initial fas), merging av prototyper (Lågnivå), rapportskrivande(fill in later), feedback insamling, \\
+\hline
+\end{tabular}
+\caption{Arbetsfördelning i projektgruppen (uppdateras löpande under projektets gång)}
+\end{table}
