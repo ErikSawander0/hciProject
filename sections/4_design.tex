@@ -53,13 +53,22 @@ Det beslutades dock att id\'eerna var rimliga för ett "advanced mode" i framtid
 \textbf{Designalternativ C} fokuserade på touch, och tillämpade en “plattare” design. Fler alternativ, inställningar, och funktioner kunde visas, och färre steg var obligatoriska för att brygga kaffe. Därför valdes det att basera första digitala prototypen på detta alternativ.
 \subsection{Iteration 2: Första digitala prototyp}
 
-\textit{[Beskriv utvecklingen till digital prototyp]}
 
-Baserat på feedback från lo-fi-testerna utvecklades den första digitala prototypen. Huvudsakliga vyer inkluderar: startsidan, sidmenyn, “manage profiles”, “schedule coffee”, "create profile" och inställningar. 
+Baserat på feedback från lo-fi-testerna utvecklades den första digitala prototypen.  Detta gjordes genom en bedömning för varenda design mål för alla koncept samt vilka design constraints de hade. Koncepten för avancerat läge togs från alternativ A, preset design togs från alternativ B och C, och schemaläggning inspireras av fig alternativ C. Det skapades först en lofi prototyp, och utefter den skapades en interaktiv prototyp med javascript. Huvudsakliga vyer inkluderar: startsidan, sidmenyn, “manage profiles”, “schedule coffee” och "create profile".
+
+\begin{figure}{H}
+    \begin{center}
+        \includegraphics[width=0.95\textwidth]{bilder/victorM.png}
+    \end{center}
+    \caption{Merged koncept av alla gruppmedlemmars första koncept.}
+    \label{fig:mergedV}
+\end{figure}
 
 \subsubsection{Startsida}
 
-Startsidan designades för att [syfte]. Layouten följer [designprincip] genom att...
+Startsidan designades för att tillåta användaren att brygga sin kaffe så fort som möjligt. Genom att flytta alla diagram och inställningar till andra delar av gränssnittet blir det tydligt vilka alternativ man har. Om man bara vill ha kaffe, då trycks det på quick brew. Om man vill leka med inställningar eller presets så trycker man på plus. Mellan lofi och hifi prototyperna så flyttades även diagrammen till “edit profile” skärmen. Tillsammans bidrar detta till teoretisk bättre visibility, samt bättre sammanhang mellan användarens mentala modell och gränssnitt. Exempelvis är det tydligt att “quick brew” inte är en preset, och kan inte förändras. 
+
+Inom denna prototyp så var affordance i huvudfokus pågrund av idén för en kaffemaskin så skulle touchskärm integreras pågrund av constraints för fanns för fysiska knappar, men dessutom så kan det vara så att skärmen inte är tillräckligt stor, så pga visibility så var därför affordance i huvudfokus. Tydligaste exemplaret av affordance är när man ska klicka "Brew" där menyn visas i block där den längst till vänster visade att man kunde "swipea" höger. Risken med detta var dock memorability ifall man kommer ihåg att ett visst preset fanns längst till höger om man ville bara brygga en enkel kopp macchiato t.ex. Alla knappar inom menyn ska dessutom vara lätt igenkännbara med att de går att trycka på, så de mesta knappar ska ha en rektangulär form med runda kanter som påminnelse att de går att trycka på för att uppfylla design constraint affordance.
 
 \begin{figure}[H]
     \centering
@@ -70,16 +79,14 @@ Startsidan designades för att [syfte]. Layouten följer [designprincip] genom a
 
 Huvudelementen är:
 \begin{itemize}
-    \item \textbf{Navigation}: Placerad i [position] för att...
-    \item \textbf{Sökfunktion}: Synligt placerad eftersom användarnas huvuduppgift är...
-    \item \textbf{Content area}: ...
-\end{itemize}
+    \item \textbf{Quick Brew}: Placerad i toppen av menyn till vänster, för att göra det tydligt att den inte är en preset, samt är den stor så att det blir en av de första sakerna som märks av användaren. Detta minskar chansen att en användare inte lyckas brygga kaffe alls.     
 
+    \item \textbf{Preset area}: Placerat till höger, och någorlunda mindre än menyn till vänster. Strukturen görs så att mindre scrollning behövs jämfört med tidiga prototyper, och skapar en tydlig skillnad mellan det man kan ändra, och det som är permanent. 
+\end{itemize}
 
 \subsubsection{Manage Profiles}
 
-Startsidan designades för att [syfte]. Layouten följer [designprincip] genom att...
-
+Sidan designades för att tillåta användaren att redigera eller ta bort profiler. Elementen ordnas i en enkel lista för att göra det så tydligt som möjligt för användaren att de redigerar och inte brygger. Valet att ha en separat skärm för detta gjordes för att förenkla startsidan så mycket som möjligt.
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.6\textwidth]{bilder/manage.png}
@@ -87,18 +94,9 @@ Startsidan designades för att [syfte]. Layouten följer [designprincip] genom a
     \label{fig:manage_v1}
 \end{figure}
 
-Huvudelementen är:
-\begin{itemize}
-    \item \textbf{Navigation}: Placerad i [position] för att...
-    \item \textbf{Sökfunktion}: Synligt placerad eftersom användarnas huvuduppgift är...
-    \item \textbf{Content area}: ...
-\end{itemize}
-
-
 \subsubsection{Schedule Coffee}
 
-Startsidan designades för att [syfte]. Layouten följer [designprincip] genom att...
-
+Sidan designades för att tillåta användaren att schemalägga en bryggning. Layouten följer samma format som “Manag Profiles"-sidan. Genom att göra det konsekvent förstår användaren åter att listan finns för att redigera, och att knapparna är permanenta. 
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.6\textwidth]{bilder/schedule.png}
@@ -108,13 +106,15 @@ Startsidan designades för att [syfte]. Layouten följer [designprincip] genom a
 
 Huvudelementen är:
 \begin{itemize}
-    \item \textbf{Navigation}: Placerad i [position] för att...
-    \item \textbf{Sökfunktion}: Synligt placerad eftersom användarnas huvuduppgift är...
-    \item \textbf{Content area}: ...
+    \item \textbf{Scheduled Brews}: Följer samma principer som "manage profiles".
+    \item \textbf{Select a profile}: Använder sig av en "pop down menu" för att minska hur mycket information behövs bearbeta direkt då en användare får upp skärmen. 
+    \item \textbf{Time}: Placerat längst upp, eftersom det är det användaren tänker på först när de vill schemalägga något. 
 \end{itemize}
-\subsubsection{Create Profile}
 
-Startsidan designades för att [syfte]. Layouten följer [designprincip] genom att...
+
+% ================ Create Profile ==================
+\subsubsection{Create Profile}
+Det bestämdes tidigt att “Create pofile” sidan var väldigt viktig. Den behöver vara enkel nog för att inte skrämma bort användare som inte har stor kompetens inom kaffe-bryggning eller teknik, men också vara intuitiv, effektiv, och kul att använda för de som har dem kompetenserna. 
 
 \begin{figure}[H]
     \centering
@@ -123,41 +123,31 @@ Startsidan designades för att [syfte]. Layouten följer [designprincip] genom a
     \caption{Första versionen av "create profiles" sidan}
     \label{fig:create_v1}
 \end{figure}
+\textbf{Utility}: Prototypen utnyttjar verktyg för att kunna utföra kaffebryggning på både ett enkelt och avancerat sätt, men på en funktionalitet så att användaren får specificera hur i detalj de vill gå. Användaren borde kunna ändra enkla saker som förekommer oftast vid kaffebryggning, såsom mjölk, styrka och socker, då det är en väldigt vanlig smaksak. När det dock kommer de som vill experimentera lite mer med sitt kaffe så finns därför ett avanced mode för att kunna vara så precis som möjligt med sin kaffebryggning. Där kan användaren konfigurera pulsintervall för kaffebryggning, andel socker i gram, temperaturen på kaffet, andel kaffe i gram, texturen på kaffet, andel vatten som används och hur länge det ska bryggas i.
 
-Huvudelementen är:
-\begin{itemize}
-    \item \textbf{Navigation}: Placerad i [position] för att...
-    \item \textbf{Sökfunktion}: Synligt placerad eftersom användarnas huvuduppgift är...
-    \item \textbf{Content area}: ...
-\end{itemize}
-\subsubsection{ inställningar }
+\textbf{Effectiveness}: Eftersom att den ordinära användaren inte vill trycka in andel socker eller vattentemperatur så borde de inte finnas inom defaultkonfigurationen pågrund av att en kaffemaskin främst ska göra kaffe på ett snabbt och effektivt sätt, så om man behöver knappa in mer saker i en defaultkonfiguration för kaffe så kan det göra användaren överväldigad med andelen funktioner för att bara brygga kaffet. Därför finns advanced mode som en separat meny för de som är medvetna om att de kan lite mer om kaffe men samtidigt ska det inte låsa ut användare för att pröva och experimenta med sitt kaffe om de vill.
 
-Startsidan designades för att [syfte]. Layouten följer [designprincip] genom att...
+\textbf{Efficiency}: Profilmenyn är designat så att vid defaultkonfigurationen av att skapa en profil så är det simplicietet som är i prioritet, så att användaren kan brygga kaffe så snabbt som möjligt med ett enkelt utseende på skärmen. Om användaren vill gå in i detalj så finns advanced mode för det alternativet. Det är medvetet att det kommer ta mer tid, men samtidigt så går det ändå att göra menyn tilräckligt enkel för att inte skrämma bort användare som vill testa sig fram genom menyerna. Detta görs t.ex genom presets för pulsintervallet.
 
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.6\textwidth]{bilder/settings.png}
-    \caption{Första versionen av inställningar }
-    \label{fig:settings_v1}
-\end{figure}
+\textbf{Learnability}: Med ett enkelt gränssnitt så ska det vara enkelt att göra sitt kaffe men inte "skrämma" användare för att experimentera med advanced modes funktioner. Därför behövde vara enkel att lära sig med att inte ha för många funktioner med samtidigt tillfredsställa de som vill konfigurera sitt kaffe.
 
-Huvudelementen är:
-\begin{itemize}
-    \item \textbf{Navigation}: Placerad i [position] för att...
-    \item \textbf{Sökfunktion}: Synligt placerad eftersom användarnas huvuduppgift är...
-    \item \textbf{Content area}: ...
-\end{itemize}
+Advanced menyn förenklades med att tydliggöra pulsintervallet, samt ge användaren presets att välja från, för att hen ska kunna få en känsla för gränssnittet.
 
+
+% ================  Side menu ==================
 \subsubsection{Sidmenyn}
-
-Startsidan designades för att [syfte]. Layouten följer [designprincip] genom att...
+Sidmenyn designades för att ge snabb åtkomst till viktiga funktioner som kan behövas oavsett var man är i gränssnittet.  
 
 Huvudelementen är:
 \begin{itemize}
-    \item \textbf{Navigation}: Placerad i [position] för att...
-    \item \textbf{Sökfunktion}: Synligt placerad eftersom användarnas huvuduppgift är...
-    \item \textbf{Content area}: ...
+    \item \textbf{Hem Knappen}: Placerad längst upp för att skapa ett sätt för användaren att alltid kunna komma tillbaka till startsidan. Detta hjälper mycket med att minska antalet fel som inte går att åtgärda. 
+    \item \textbf{Anställningar och hjälp}: Synligt placerad eftersom användaren ska alltid kunna få hjälp. Kravet för användaren att behöva komma ihåg saker minskas.
 \end{itemize}
+
+
+% ==================== DONE FOR THE DAY =========================
+
+
 \subsection{Iteration 3: Förfinad design}
 
 \textit{[Beskriv hur designen förbättrades baserat på utvärdering]}
@@ -168,7 +158,7 @@ Efter användbarhetstester i iteration 2 identifierades flera problem (se avsnit
 
 \textbf{Lösning:} [Funktion] flyttades till [position] och fick en mer framträdande visuell design (se figur \ref{fig:forbattring1}).
 
-\begin{figure}[h]
+\begin{figure}[ht]
     \centering
     % \includegraphics[width=\textwidth]{bilder/before_after.png}
     \caption{Före (vänster) och efter (höger) designändring}
