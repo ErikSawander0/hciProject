@@ -1,10 +1,5 @@
 \section{Design}
 
-\textit{[I designkapitlet presenterar ni er implementation: skisser, lösningsförslag, hur lösningen utvecklats genom iterationer och motiverar era designbeslut med stöd från teori och resultat.]}
-
-\textit{[Strukturera kapitlet så att det är tydligt hur designen utvecklats. Fokusera på de viktiga designbesluten och motivera dem. För mindre viktiga ändringar, hänvisa till bilagor.]}
-
-
 \subsection{Designkoncept}
 
 \textit{[Beskriv det övergripande designkonceptet]}
@@ -145,18 +140,32 @@ Huvudelementen är:
 \end{itemize}
 
 
-% ==================== DONE FOR THE DAY =========================
 
+% ========================= CONTINUING HERE ======================
 
-\subsection{Iteration 3: Förfinad design}
-
-\textit{[Beskriv hur designen förbättrades baserat på utvärdering]}
+\subsection{Iteration 3}
 
 Efter användbarhetstester i iteration 2 identifierades flera problem (se avsnitt \ref{sec:resultat_test}). Följande ändringar gjordes:
 
-\textbf{Problem 1:} Användare hade svårt att hitta [funktion]
+\textbf{Problem 1:} Användare hade svårt att identifiera vad knappar gjorde direkt, och tyckte att det var krävande att behöva läsa så mycket text.  
 
-\textbf{Lösning:} [Funktion] flyttades till [position] och fick en mer framträdande visuell design (se figur \ref{fig:forbattring1}).
+\textbf{Lösning:} Fler ikoner lags till som anseddes förbättra tydligheten av knapparna samt följer det Nielsens (citation) design heurestic “Recognition over recall”. 
+
+\textbf{Problem 2} Flera användare tyckte att det borde finnas färdiga profiler 
+
+ \textbf{Lösning:} Färdiga profiler skapades. De går att använda profilerna som avgångspunkter för att skapa eget recept, detta tycktes göra processen enklare för de som inte har mycket erfarenhet inom kaffe.  
+
+ \textbf{Problem 3} Vi fick feedback att färgerna var ibland inte konsekventa, och att de var ibland otydliga.  
+
+\textbf{Lösning:}  flera påpekade detta problem, men hade inte specifika krav eller exempel. På grund av detta samt att flera andra ville ha valbara färgtema, så var det naturligt att implementera några färgteman.   
+
+\textbf{Problem 3} Gränssnittet för att schemalägga bryggning hade fåt lite kritik över des icke intuitive design. 
+\textbf{Lösning} Det gjordes om så att knappar användes för att välja tid. Detta anseddes vara lättare än att skriva in tiden med ett touch tangentbord på skärmen  
+
+ \textbf{Problem 4} “Profile manager” sidan förvirrade visa användare.  
+
+Detta var ganska logiskt, eftersom det går att skapa profiler från startsidan så borde det också gå att redigera dem där. Därför lags det till en “edit” knapp  på var profil i startsidan, och delete knappen flytades in i “edit profile” vyn.  Därefter så togs bort “Profile manager” sidan.  
+
 
 \begin{figure}[ht]
     \centering
@@ -165,7 +174,7 @@ Efter användbarhetstester i iteration 2 identifierades flera problem (se avsnit
     \label{fig:forbattring1}
 \end{figure}
 
-\textbf{Motivering:} Ändringen baseras på designprincipen om visibility \cite{sharp2019} och testresultaten visade att [beskriv förbättring].
+\textbf{Motivering:} Ändringen baseras på designprincipen om visibility \cite{sharp2019} and add more stuff here.
 
 
 \subsection{Slutgiltig design}

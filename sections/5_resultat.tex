@@ -51,12 +51,44 @@ Baserat på intervjudata identifierades följande användarbehov:
 
 Femton användare deltog i användbarhetstester av prototyp version 2. Varje deltagare fick genomföra 4 uppgifter, men enkäten hade inte frågar om fjärde uppgiften. 
 
+\subsubsection{Information om deltagare}
+
+\begin{table}[H]
+\centering
+\begin{tabular}{|l|c|}
+\hline
+\textbf{Ålder} & \textbf{Antal} \\
+\hline
+20s:  & 4  \\ 
+50s:  & 4  \\
+80s:  & 1  \\
+\hline
+\end{tabular}
+\caption{Ålder bland deltagare}
+\label{tab:age1}
+\end{table}
+
+\begin{table}[H]
+\centering
+\begin{tabular}{|l|c|}
+\hline
+\textbf{Ålder} & \textbf{Antal} \\
+\hline
+nej  & 4   \\
+ja  & 5  \\
+\hline
+\end{tabular}
+\caption{Deltagare som använt en liknande produkt}
+\label{tab:exp1}
+\end{table}
+
+
 
 \subsubsection{Kvantitativa resultat}
 
 \textbf{Genomförandetid}
 
-Tabell \ref{tab:tid} visar tid för att genomföra varje uppgift.
+Tabell \ref{tab:tid2} visar tid för att genomföra varje uppgift.
 
 \begin{table}[h]
 \centering
@@ -70,7 +102,7 @@ Uppgift 3:  & 23 & 1 & 60\\
 \hline
 \end{tabular}
 \caption{Tid för genomförande av uppgifter}
-\label{tab:tid}
+\label{tab:tid2}
 \end{table}
 
 \textbf{Framgångsgrad}
@@ -119,21 +151,109 @@ Under testerna observerades följande beteenden:
 
 Efter testerna fick deltagarna svara på hur svåra de tyckte var uppgift var att genomföra. Medelvärdet var 68 av 70.
 
-% we didnt do this sus point thing... update method erik
-\begin{figure}[ht]
-    \centering
-    % \includegraphics[width=0.6\textwidth]{bilder/sus_score.png}
-    \caption{SUS-poäng från deltagare}
-    \label{fig:sus}
-\end{figure}
+% we didnt do this sus point thing... update method, also where we got these scores from.
 
+
+% =========================================== WORKING ON THIS ===============================================
 
 \subsection{Resultat från användbarhetstester - Iteration 3}
 
-\textit{[Om ni gjorde fler iterationer, presentera även dessa resultat. Visa förbättringar jämfört med tidigare iteration.]}
+Femton användare deltog i användbarhetstester av prototyp version 3. Varje deltagare fick genomföra 5 uppgifter. 
 
-Efter designändringar (beskrivna i avsnitt 4.3) genomfördes en ny omgång tester med [antal] deltagare.
+\subsubsection{Information om deltagare}
 
+\begin{table}[H]
+\centering
+\begin{tabular}{|l|c|}
+\hline
+\textbf{Ålder} & \textbf{Antal} \\
+\hline
+20s:  & 4  \\ 
+50s:  & 4  \\
+80s:  & 1  \\
+\hline
+\end{tabular}
+\caption{Ålder bland deltagare}
+\label{tab:age1}
+\end{table}
+
+\begin{table}[H]
+\centering
+\begin{tabular}{|l|c|}
+\hline
+\textbf{Ålder} & \textbf{Antal} \\
+\hline
+nej  & 4   \\
+ja  & 5  \\
+\hline
+\end{tabular}
+\caption{Deltagare som använt en liknande produkt}
+\label{tab:exp1}
+\end{table}
+
+\subsubsection{Kvantitativa resultat}
+
+\textbf{Genomförandetid}
+Tabell \ref{tab:tid} visar tid för att genomföra varje uppgift.
+\begin{table}[H]
+\centering
+\begin{tabular}{|l|c|c|c|}
+\hline
+\textbf{Uppgift} & \textbf{Medeltid (s)} & \textbf{Min (s)} & \textbf{Max (s)} \\
+\hline
+Uppgift 1:  & 3 & 1 & 14 \\
+Uppgift 2:  & 14 & 6 & 51\\
+Uppgift 3:  & 11 & 4 & 32\\
+Uppgift 4:  & 13 & 3 & 42\\
+Uppgift 5:  & 8 & 6.5 & 20\\
+\hline
+\end{tabular}
+\caption{Tid för genomförande av uppgifter}
+\label{tab:tid}
+\end{table}
+
+\textbf{Framgångsgrad}
+
+Figur \ref{fig:success_rate2} visar hur många deltagare som lyckades genomföra varje uppgift utan hjälp.
+
+\begin{figure}[ht]
+    \centering
+    % \includegraphics[width=0.7\textwidth]{bilder/success_rate.png}
+    \caption{Framgångsgrad för varje uppgift (antal användare som klarade uppgiften utan hjälp)}
+    \label{fig:success_rate2}
+\end{figure}
+
+\textbf{Identifierade problem}
+
+Totalt identifierades 7 unika användbarhetsproblem. Tabell \ref{tab:problem} sammanfattar de mest förekommande problemen.
+%MARK make sure task descriptions mentioned, how we didnt include four...
+\begin{table}[H]
+\centering
+\begin{tabular}{|p{6cm}|c|c|}
+\hline
+\textbf{Problem} & \textbf{Antal som drabbades} & \textbf{Allvarlighetsgrad} \\
+\hline
+Problem 1: "Advanced" inställning behövs struktureras & 3/9 & Medel\\
+Problem 2: Contrast mellan text och backgrund & 2/9 &  Medel \\
+\hline
+\end{tabular}
+\caption{Identifierade användbarhetsproblem och deras allvarlighetsgrad}
+\label{tab:problem2}
+\end{table}
+
+
+\subsubsection{Kvalitativa resultat}
+
+Under testerna observerades följande beteenden:
+
+\textbf{Metod} Flera användare blev förvirad av att testa ett touch gränssnitt på en dator. 
+
+\subsubsection{Subjektiv tillfredsställelse}
+
+Efter testerna fick deltagarna svara på hur svåra de tyckte var uppgift var att genomföra. Medelvärdet var 68 av 70.
+
+
+\subsection{Jämförelse mellan iterationer}
 \textbf{Jämförelse med iteration 2:}
 
 \begin{itemize}
