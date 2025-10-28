@@ -136,7 +136,7 @@ Sidmenyn designades för att ge snabb åtkomst till viktiga funktioner som kan b
 Huvudelementen är:
 \begin{itemize}
     \item \textbf{Hem Knappen}: Placerad längst upp för att skapa ett sätt för användaren att alltid kunna komma tillbaka till startsidan. Detta hjälper mycket med att minska antalet fel som inte går att åtgärda. 
-    \item \textbf{Anställningar och hjälp}: Synligt placerad eftersom användaren ska alltid kunna få hjälp. Kravet för användaren att behöva komma ihåg saker minskas.
+    \item \textbf{Inställningar och hjälp}: Synligt placerad eftersom användaren ska alltid kunna få hjälp. Kravet för användaren att behöva komma ihåg saker minskas.
 \end{itemize}
 
 
@@ -146,6 +146,14 @@ Huvudelementen är:
 \subsection{Iteration 3}
 
 Efter användbarhetstester i iteration 2 identifierades flera problem (se avsnitt \ref{sec:resultat_test}). Följande ändringar gjordes:
+
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.6\textwidth]{bilder/3problem1-25.png}
+    \caption{ förändringar som gjorts för att lösa problem 1, 2 och 5}
+    \label{fig:forbattring1}
+\end{figure}
 
 \textbf{Problem 1:} Användare hade svårt att identifiera vad knappar gjorde direkt, och tyckte att det var krävande att behöva läsa så mycket text.  
 
@@ -157,24 +165,69 @@ Efter användbarhetstester i iteration 2 identifierades flera problem (se avsnit
 
  \textbf{Problem 3} Vi fick feedback att färgerna var ibland inte konsekventa, och att de var ibland otydliga.  
 
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.6\textwidth]{bilder/3problem2.png}
+    \caption{ förändringar som gjorts för att lösa problem 3}
+    \label{fig:2forbattring2}
+\end{figure}
 \textbf{Lösning:}  flera påpekade detta problem, men hade inte specifika krav eller exempel. På grund av detta samt att flera andra ville ha valbara färgtema, så var det naturligt att implementera några färgteman.   
 
-\textbf{Problem 3} Gränssnittet för att schemalägga bryggning hade fåt lite kritik över des icke intuitive design. 
+\textbf{Problem 4} Gränssnittet för att schemalägga bryggning hade fåt lite kritik över des icke intuitive design. 
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.6\textwidth]{bilder/3problem4.png}
+    \caption{ förändringar som gjorts för att lösa problem 4}
+    \label{fig:forbattring3}
+\end{figure}
 \textbf{Lösning} Det gjordes om så att knappar användes för att välja tid. Detta anseddes vara lättare än att skriva in tiden med ett touch tangentbord på skärmen  
 
- \textbf{Problem 4} “Profile manager” sidan förvirrade visa användare.  
+ \textbf{Problem 5} “Profile manager” sidan förvirrade visa användare.  
+
+\textbf{Lösning:} Detta var ganska logiskt, eftersom det går att skapa profiler från startsidan så borde det också gå att redigera dem där. Därför lags det till en “edit” knapp  på var profil i startsidan, och delete knappen flytades in i “edit profile” vyn.  Därefter så togs bort “Profile manager” sidan.  
+
+
+
+
+
+
+\subsection{Iteration 4}
+
+Efter användbarhetstester i iteration 3 identifierades flera problem (se avsnitt \ref{sec:resultat_test}). Följande ändringar gjordes:
+
+\textbf{Problem 1:} Kontrasten gjorde viss text otydlig eller svår att läsa.  
+
+  
+
+\textbf{Lösning:} Det lags till en lysande effekt till text där det anseddes vara ett problem med kontrast. Samt lags det till en “blinking” effekt till visa textfält för att förtyda att de var obligitoriska.  
+
+  
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.6\textwidth]{bilder/3problem1.png}
+    \caption{ förändringar som gjorts för att lösa problem 1}
+    \label{fig:forbattring4}
+\end{figure}
+
+\textbf{Problem 2} “Confirm” menyer var ej konsekventa och ibland saknades det en “cancel knapp” 
+
+  
+
+\textbf{Lösning:} En “cancel” knapp lags till i varje “confirm” meny, samt  
+standardiserades de över hela gränssnittet.  
+
+\textbf{Lösning:}  
 
 Detta var ganska logiskt, eftersom det går att skapa profiler från startsidan så borde det också gå att redigera dem där. Därför lags det till en “edit” knapp  på var profil i startsidan, och delete knappen flytades in i “edit profile” vyn.  Därefter så togs bort “Profile manager” sidan.  
 
 
-\begin{figure}[ht]
+\begin{figure}[H]
     \centering
-    % \includegraphics[width=\textwidth]{bilder/before_after.png}
-    \caption{Före (vänster) och efter (höger) designändring}
-    \label{fig:forbattring1}
+    \includegraphics[width=0.6\textwidth]{bilder/4problem2.png}
+    \caption{ förändringar som gjorts för att lösa problem 2}
+    \label{fig:forbattring5}
 \end{figure}
-
-\textbf{Motivering:} Ändringen baseras på designprincipen om visibility \cite{sharp2019} and add more stuff here.
 
 
 \subsection{Slutgiltig design}
@@ -189,6 +242,8 @@ Huvudsakliga designprinciper som tillämpats:
     \item \textbf{Feedback}: Användaren får tydlig återkoppling när...
     \item \textbf{Affordance}: Interaktiva element signalerar tydligt...
 \end{itemize}
+
+
 
 
 \subsection{Designbeslut och motiveringar}
