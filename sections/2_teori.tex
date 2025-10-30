@@ -1,53 +1,86 @@
 \section{Teori}
-
-\textit{[Teorikapitlet ska lyfta de teoretiska delar som är relevanta för ert arbete. Fokusera på koncept från kurslitteraturen och forskningsartiklar som är viktiga för just ert projekt. Teorikapitlet ska vara tungt refererat till tidigare arbeten.]}
-
-\textit{[Kom ihåg: Behandla endast teori som är relevant för ert arbete. Ni skriver inte en lärobok, utan lyfter bara de delar som ni senare kommer att referera till i design, metod eller diskussion.]}
-
+I detta kapitel kommer de teoretiska ramverk som projektet grundar sig på att presenteras. En användarcentrerad design är viktigt för kaffemaskingränssnittet och i denna sektion kommer fokus ligga på interaktionsdesignteori och användbarhetsprinciper. 
 
 \subsection{Användarcentrerad design}
+Användarcentrerad design (User-Centered Design, UCD) är en designfilosofi där användarens behov, begränsningar och förutsättningar står i centrum genom hela utvecklingsprocessen \cite{sharp2019}. ISO 9241-210 förklarar UCD som en metod där användaren deltar i designprocessen genom iterationer av tester, utvärdering och revidering.
 
-\textit{[Exempel på teorisektion]}
-
-Användarcentrerad design (User-Centered Design, UCD) är en designfilosofi där användaren står i centrum genom hela utvecklingsprocessen \cite{sharp2019}. Metoden innebär att användarna aktivt involveras i designprocessen genom iterationer av design, test och revidering.
-
-De fyra huvudprinciperna för användarcentrerad design är:
+De fyra huvudprinciperna för användarcentrerad design enligt ISO 9241-210 är:
 \begin{enumerate}
-    \item Tidigt fokus på användare och uppgifter
-    \item Empirisk mätning av produktanvändning
-    \item Iterativ design
-    \item Integrerad design
+    \item Tidigt fokus på användare och uppgifter: Förstå kontext, användaruppgifter och mål
+    \item Empirisk mätning av produktanvändning: Tester med testanvändare för observation av användbarhet
+    \item Iterativ design: Genom att iterera cykler av prototyping, testning och förbättring utveckla designen
+    \item Integrerad design: Användarupplevelsen betraktas holistiskt 
 \end{enumerate}
 
+För projektet betyder detta att ett stort fokus bör läggas på att feedback ska systematiskt integreras i designen under processen. 
 
 \subsection{Användbarhet}
 
-\textit{[Beskriv relevanta användbarhetsbegrepp]}
+Användbarhet definieras enligt ISO 9241-11 som "den grad i vilken en produkt kan användas av specificerade användare för att uppnå specificerade mål med effektivitet, ändamålsenlighet och tillfredsställelse i ett specificerat sammanhang" \cite{iso9241}.
 
-Nielsen definierar användbarhet genom fem komponenter \cite{nielsen2012}:
+Nielsen sammanställer fem mätbara komponenter för användbarhet \cite{nielsen1993}:
+
 \begin{itemize}
-    \item \textbf{Lärbarhet}: Hur lätt är det för användare att utföra grundläggande uppgifter första gången?
-    \item \textbf{Effektivitet}: När användarna lärt sig designen, hur snabbt kan de utföra uppgifter?
-    \item \textbf{Minnesvärdhet}: När användare återkommer efter en period, hur lätt återupprättar de kompetensen?
-    \item \textbf{Fel}: Hur många fel gör användare, hur allvarliga är de, och hur lätt kan de återhämta sig?
-    \item \textbf{Tillfredsställelse}: Hur trevlig är designen att använda?
+    \item \textbf{Lärbarhet (Learnability)}: Hur lätt är det för användare att utföra uppgifter första gången de möter designen? För projektet innebär detta att nya användare snabbt ska kunna brygga sin första kopp kaffe.
+    
+    \item \textbf{Effektivitet (Efficiency)}: När användarna lärt sig systemet, hur snabbt kan de utföra uppgifter? Ett effektivt gränssnitt minimerar antalet steg för vanliga uppgifter som att skapa en profil eller att schemalägga en kopp kaffe.
+    
+    \item \textbf{Minnesvärdhet (Memorability)}: Efter en period av inaktivitet, hur lätt återupprättar användare kompetens inom gränssnittet? Detta är särskilt relevant då kaffemaskiner inte alltid används dagligen av alla användare.
+    
+    \item \textbf{Fel (Errors)}: Hur många fel gör användare, hur allvarliga är felen, och hur lätt kan användare återhämta sig från felen? Gränssnittet bör förhindra kritiska fel som att starta bryggnig utan vatten.
+    
+    \item \textbf{Tillfredsställelse (Satisfaction)}: Hur känslomässigt positiv är upplevelsen av designen och till vilken grad upplever användaren designen tillfredställande? Gränssnittet bör balansera estitik och funktionalitet på ett sätt där användaren både upplever användandet som effektivt samt anser att designen är tilltalande. 
 \end{itemize}
+
+Dessa fem komponenter Nielsen sammanställt utgör utvärderingskriterier för projektets prototyp och vägleder designbeslut genom hela utvecklingsprocessen.
 
 
 \subsection{Forskningsetiska principer}
 
-\textit{[Detta är obligatoriskt att inkludera]}
+I projekt som involverar människor är det viktigt att följa Vetenskapsrådets forskningsetiska principer \cite{vetenskapsradet2002}. 
 
-I projekt som involverar människor är det viktigt att följa Vetenskapsrådets forskningsetiska principer \cite{vetenskapsradet2002}. De fyra huvudkraven är:
-
+De fyra huvudkraven är:
 \begin{itemize}
-    \item \textbf{Informationskravet}: Forskaren ska informera deltagare om forskningens syfte
-    \item \textbf{Samtyckeskravet}: Deltagare har rätt att själva bestämma över sin medverkan
-    \item \textbf{Konfidentialitetskravet}: Uppgifter om deltagare ska förvaras på ett sätt så obehöriga inte kan ta del av dem
-    \item \textbf{Nyttjandekravet}: Insamlade uppgifter får endast användas för forskningsändamål
+    \item \textbf{Informationskravet}: Forskaren ska informera deltagare om forskningens syfte, metod samt frivilligt deltagande. För detta projekt omfattar informationskravet att testanvändare bör informeras om hur deras feedback kommer användas samt till vilket syfte. 
+    \item \textbf{Samtyckeskravet}: Deltagare har rätt att själva bestämma över sin medverkan. För detta projekt projekt omfattar samtyckeskravet att testanvändare bör ge samtycke till tester innan de genomförs, samt informeras om att deras medverkan kan avbrytas utan negativa konsekvenser. 
+    \item \textbf{Konfidentialitetskravet}: Uppgifter om deltagare ska förvaras på ett sätt så obehöriga inte kan ta del av dem. För detta projekt omfattar konfidentialitetskravet att personuppgifter till deltagande testanvändare bör anonymiseras i rapporten och samtliga presentationer. 
+    \item \textbf{Nyttjandekravet}: Insamlade uppgifter får endast användas för forskningsändamål. För detta projekt omfattar nyttjandekravet att den insamlade data endast får användas till att förbättra prototypen och dokumentera designprocessen. 
 \end{itemize}
 
+\subsection{Heuristisk utvärdering}
+Nielsen och Molich har formulerat tio heuristiker som utgör en branchstandard för användbarhetsbedömning \cite{nielsen1994}. 
 
-\subsection{[Lägg till fler teorisektioner efter behov]}
+\begin{enumerate}
+    \item \textbf{Synlighet av systemstatus}: Systemet ska alltid hålla användaren informerad om vad som händer genom lämplig feedback inom rimlig tid
+    
+    \item \textbf{Överensstämmelse mellan system och verklighet}: Systemet ska tala användarens språk med ord, fraser och koncept som är bekanta för användaren
+    
+    \item \textbf{Användarkontroll och frihet}: Användare behöver en tydlig "nödutgång" för att lämna oönskade tillstånd utan omfattande dialog
+    
+    \item \textbf{Konsekvens och standarder}: Användare ska inte behöva undra om olika ord, situationer eller handlingar betyder samma sak
+    
+    \item \textbf{Felförebyggande}: Bättre än goda felmeddelanden är noggrann design som förhindrar att problem uppstår
+    
+    \item \textbf{Igenkänning snarare än påminnelse}: Minimera användarens minnesbelastning genom att göra objekt, handlingar och alternativ synliga
+    
+    \item \textbf{Flexibilitet och effektivitet}: Genvägar för erfarna användare kan påskynda interaktion så att systemet fungerar för både ovana och erfarna användare
+    
+    \item \textbf{Estetisk och minimalistisk design}: Dialoger bör inte innehålla irrelevant eller sällan behövd information
+    
+    \item \textbf{Hjälp användare att känna igen, diagnostisera och återhämta sig från fel}: Felmeddelanden ska uttryckas på vanligt språk, indikera problemet och konstruktivt föreslå lösningar
+    
+    \item \textbf{Hjälp och dokumentation}: Även om det är bättre om systemet kan användas utan dokumentation kan det vara nödvändigt att tillhandahålla hjälp
+\end{enumerate}
 
-\textit{[Till exempel: Gestaltlagar, designprinciper, prototypmetoder, evalueringsmetoder, etc.]}
+I projektet utgör de tio heuristikerna ett utvärderingskriterie för den färdiga prototypen.
+
+\subsection{Inkluderande design och tillgänglighet}
+Produkten ska kunna användas av så många som möjligt och även ta hänsyn till användare med funktionsvariationer. Som riktlinje för projektet används Web Content Accessibility Guidelines (WCAG). Riktlinjen följer fyra grundprinciper:
+\begin{itemize}
+    \item \textbf{Perceivable}
+    \item \textbf{Operable}
+    \item \textbf{Understandable}
+    \item \textbf{Robust}
+\end{itemize}
+
+Inom projektet omfattar det val av kontrastnivå, tillräcklig storlek på klickbara element, visuell feedback samt begriplig ikonografi med textbeskrivningar vid behov. 

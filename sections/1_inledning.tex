@@ -1,50 +1,45 @@
 \section{Inledning}
 
-Kaffekonsumtion har blivit en central del av många människors vardag, och med den växande kaffekulturen har intresset för hemmabryggt premium-kaffe ökat markant. Moderna kaffemaskiner erbjuder idag avancerade funktioner som tidigare endast fanns i professionella espressomaskiner, men denna tekniska komplexitet medför ofta utmaningar i användbarhet och tillgänglighet.
+I takt med att kaffekulturen växer börjar allt fler intressera sig för att brygga kaffe av kvalitet hemifrån. Dagens kaffemaskiner är ofta utrustade med avancerade funktioner som låter användaren i detalj skräddarsy sin kaffebryggning. Detta medför komplexa utmaningar inom användbarhet och tillgänglighet. 
 
 \subsection{Bakgrund}
 
-Premium-kaffemaskiner för hemmabruk har utvecklats från enkla bryggare till avancerade system med möjlighet att kontrollera variabler som malningsgrad, vattentemperatur, extraktionstid och vattenpulsintervaller. Denna utveckling har skapat en kluvenhet i användarupplevelsen: å ena sidan finns nybörjare som vill brygga gott kaffe enkelt, å andra sidan finns entusiaster som vill ha full kontroll över bryggprocessen.
+Efterfrågan om att kunna kontrollera små variabler som vattenpulsintervaller, malningsgrad, vattentemperatur och bryggningstid har ökat hos premium-kaffemaskiner. Denna utveckling skapar en svårighet i att skapa en bra användarupplevelse för alla användare. Ena sidan är användare som enkelt och snabbt vill kunna brygga en kopp kaffe och andra sidan entusiaster som vill ha full kontroll över alla bryggvariabler.
 
-Nuvarande kaffemaskingränssnitt tenderar att antingen förenkla till den grad att avancerade funktioner blir otillgängliga, eller exponera alla inställningar samtidigt vilket skapar en överväldigande upplevelse för nya användare. Få maskiner lyckas balansera enkelhet för den oinvigde med djup funktionalitet för den erfarne användaren. Vanliga användbarhetsproblem inkluderar:
+Många av dagens kaffemaskiner tenderar att inrikta sitt användargränssnitt till det extrema. Antingen genom att gömma avancerade funktioner eller att exponera alla detaljer. Att hitta balansen mellan enkelhet och djup funktionalitet är svårt och något som få maskiner lyckas med. Vanliga användbarhetsproblem som förekommer:
 
 \begin{itemize}
-    \item Komplexa menystrukturer med många nivåer av undermenyer
-    \item Bristande tydlighet i vad olika parametrar faktiskt påverkar
-    \item Svårigheter att spara och återanvända föredragna inställningar
-    \item Inkonsekvent terminologi och symbolik mellan olika tillverkare
-    \item Begränsad möjlighet till personalisering och anpassning
+    \item Menystrukturer med komplexa undermenyer
+    \item Saknad tydlighet om vad parametrar gör
+    \item Svårigheter att återanvända exakta inställningar
+    \item Begränsade möjligheter till personalisering
 \end{itemize}
 
-Genom att tillämpa principer från användarcentrerad design och interaktionsdesign finns potential att skapa gränssnitt som demokratiserar avancerad kaffebrygning genom att göra den tillgänglig för en bredare målgrupp utan att kompromissa med funktionalitet.
-
+Genom att använda principer från interaktionsdesign och användarcentrerad design kan man skapa ett gränssnitt som gör detaljerad kaffebryggning tillgängligt för en större målgrupp utan att förlora efterfrågade funktioner. 
 
 \subsection{Syfte}
 
-Syftet med detta projekt är att förbättra användarupplevelsen för premium-kaffemaskiner genom att designa ett intuitivt gränssnitt som tillgodoser både nybörjare och erfarna användare. Projektet strävar efter att demokratisera avancerad kaffebrygning genom att sänka inlärningströskeln samtidigt som full funktionalitet bibehålls för entusiaster.
+Syftet med projektet är att förbättra användarupplevelsen av avancerade kaffemaskiner genom skapandet av ett gränssnitt som tilltalar både nybörjare och erfarna kaffeentusiaster samtidigt som den sänker inlärningströskeln.  
 
-Mer specifikt vill projektet undersöka hur ett profilbaserat system kan möjliggöra progressiv avslöjande av funktionalitet, där användare kan välja sin egen komplexitetsnivå beroende på erfarenhet och intresse.
-
+Projektet syftar till att utforska hur ett profilsystem kan användas för att undanhålla komplexitet på ett sätt så användare själv kan anpassa komplexitetsnivån utifrån intresse.
 
 \subsection{Mål}
 
 Projektets mål är att leverera:
 
 \begin{itemize}
-    \item En högfidelitetsprototyp av ett användargränssnitt för en premium-kaffemaskin med touchskärm, riktat mot kaffeälskare som värderar både enkelhet och avancerad funktionalitet
-
+    \item En högfidelitetsprototyp av ett touchbaserat gränssnitt för en premium-kaffemaskin som balanserar enkelhet med avancerade funktionaliteter.
     \item Ett profilbaserat system där användare kan:
     \begin{itemize}
-        \item Brygga kaffe med fördefinierade profiler (en-knapps-lösning)
-        \item Skapa och spara egna bryggprofiler med anpassade inställningar
-        \item Justera avancerade parametrar (malningsgrad, vattentemperatur, vattenpulsintervall, extraktionstid) för användare som önskar djupare kontroll
+        \item Brygga kaffe med förinställda profiler
+        \item Skapa bryggprofiler med egna anpassade preferenser. 
+        \item Anpassa avancerade inställningar (vattenpulsinervall, temperatur, malningsgrad och extraktionstid)
     \end{itemize}
 
-    \item Grundläggande personaliseringsfunktioner såsom val av färgtema
-
-    \item En visuell implementation av gränssnittet (UI/UX) som demonstrerar interaktionsflöden och användbarhet, utan koppling till faktisk maskinvarufunktionalitet
+    \item Personaliseringsfunktion i form av val av färgtema
 
     \item Dokumentation och utvärdering av designprocessen genom användarcentrerade metoder
+    
 \end{itemize}
 
 
@@ -53,20 +48,21 @@ Projektets mål är att leverera:
 Projektet avgränsas till följande:
 
 \begin{itemize}
-    \item \textbf{Plattform och implementation:} Projektet fokuserar på design av användargränssnittet (UI/UX) och visuell implementation. Inga faktiska maskinvarufunktioner eller backend-system implementeras. Knappar och kontroller kommer att vara visuellt och interaktivt funktionella men inte kopplade till bryggfunktionalitet.
+    
+    \item \textbf{Plattform och implementation:} Projektet fokuserar på design av användargränssnittet (UX/UI). Funktioner kommer interaktivt vara funktionella med inte kopplade till praktisk funktionalitet. Inga back-end system kommer att implementeras.
 
-    \item \textbf{Maskintyp:} Projektet avgränsas till en specifik typ av premium-kaffemaskin med integrerad touchskärm. Mobilapplikationer, webbgränssnitt eller fjärrstyrning ingår inte i projektet.
+    \item \textbf{Maskintyp:} Fjärrstyrning eller mobilapplikationer ingår inte i projektet. Fokus ligger på gränssnittet på kaffemaskinens touchskärm.
 
-    \item \textbf{Språk:} Användargränssnittet designas och presenteras enbart på engelska för att förenkla utvecklingsprocessen och demonstration.
+    \item \textbf{Språk:} För att förenkla utvecklingsprocessen presenteras avandargränssnittet endast på engelska.
 
-    \item \textbf{Målgrupp:} Primär fokus ligger på kaffeälskare i hemsegmentet med varierande erfarenhetsnivåer.
+    \item \textbf{Målgrupp:} Kaffeälskare med varierande erfarenhet av kaffebryggning som vill göra premium kaffe hemifrån.
 
-    \item \textbf{Funktionsomfång:} Projektet fokuserar på kärnfunktionalitet relaterad till kaffebrygning och profilhantering. Avancerade funktioner som underhållsscheman, fjärrdiagnostik eller integration med smarta hem-system ingår inte.
+
 \end{itemize}
 
-\textbf{Motivering:} Dessa avgränsningar möjliggör ett fokuserat arbete på interaktionsdesign och användbarhet utan att belastas av teknisk implementation. Genom att fokusera på en plattform (touchskärm) och ett språk (engelska) kan designprocessen bli mer iterativ och användarcentrerad inom projektets tidsram.
+\textbf{Motivering:} Projektets avgränsningar möjliggör att fokus kan ligga på användbarhet och interaktionsdesign utan att arbetet belastas av tekniska implementationer. Detta resulterar i en mer iterativ och användarcentrerad process inom given tidsram. 
 
-\textbf{Potentiella konsekvenser:} Avsaknaden av faktisk backend-funktionalitet innebär att vissa användarupplevelser kring responstider och systemfeedback kommer att simuleras. Detta kan påverka hur realistiskt användbarhetstester speglar en faktisk produktmiljö, men är acceptabelt då projektets fokus ligger på interaktionsdesign snarare än teknisk implementation.
+\textbf{Potentiella konsekvenser:} Eftersom ingen backend-implementation utförs begränsas möjligheten till feedback kring responstider. Detta påverkar hur realistiskt användbarhetstesterna visar den faktiska produkten. 
 
 
 \subsection{Arbetsfördelning}
